@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "repository": "local-voice-assistant-stack",
+  "reviewed_on": "2026-11-21",
+  "language": "en",
+  "policy": "Each source supports only the narrow claim_scope. Cross-project architecture, gates, thresholds, and selection guidance are author recommendations requiring local validation. URL reachability is transport evidence only.",
+  "sources": [
+    {
+      "name": "openWakeWord",
+      "url": "https://github.com/dscripka/openWakeWord",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "wake-word component role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "SileroVAD",
+      "url": "https://github.com/snakers4/silero-vad",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "voice-activity-detection role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "whisper.cpp",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "local STT runtime role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "faster-whisper",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "local STT runtime role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "Piper",
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "local TTS role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "KokoroONNX",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "local ONNX TTS role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "Wyoming",
+      "url": "https://github.com/rhasspy/wyoming",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "voice-service protocol ecosystem",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "HomeAssistant",
+      "url": "https://www.home-assistant.io/voice_control/voice_remote_local_assistant/",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "integrated local voice route",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "HAIntents",
+      "url": "https://github.com/home-assistant/intents",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "intent data and matching ecosystem",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "Speaches",
+      "url": "https://github.com/speaches-ai/speaches",
+      "type": "official upstream project, protocol, or integration documentation",
+      "authority": "named upstream project, standards body, publisher, or official documentation owner",
+      "version_or_date": "moving upstream unless the URL pins a version; reviewed 2026-11-21",
+      "claim_scope": "local speech server role",
+      "does_not_support": "This source alone does not validate the authored pipeline, interoperability, local performance, safety, legality, or fitness for a particular deployment."
+    },
+    {
+      "name": "NIST Privacy Framework",
+      "url": "https://www.nist.gov/privacy-framework",
+      "type": "official privacy risk-management framework",
+      "authority": "US National Institute of Standards and Technology",
+      "version_or_date": "official framework landing page; reviewed 2026-11-21",
+      "claim_scope": "privacy risk identification and management vocabulary applicable to voice-data handling",
+      "does_not_support": "The framework does not certify a voice stack, define consent in every jurisdiction, or prove deletion and network behavior."
+    },
+    {
+      "name": "FTC Voice Cloning Challenge",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/Voice-Cloning-Challenge.pdf",
+      "type": "official government consumer-protection notice",
+      "authority": "United States Federal Trade Commission",
+      "version_or_date": "November 16, 2023; reviewed 2026-11-21",
+      "claim_scope": "documented harms and defensive focus for AI-enabled voice cloning",
+      "does_not_support": "This notice is not a universal voice-rights rule, permission record, or technical compatibility result."
+    }
+  ]
+}
