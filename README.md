@@ -1,5 +1,10 @@
 # Local Voice Assistant Stack by Latency and Privacy Budget
 
+
+> **Decision:** Use this guide when designing a local voice assistant against end-to-end latency, privacy, action approval, interruption, and failure budgets; skip it if you only want a speech-model list.
+>
+> **For:** local-AI builders, accessibility developers, and privacy-focused home-automation teams  ·  **Not for:** teams without a consent model or a way to measure each pipeline stage
+
 A local voice assistant is a timed conversation, not a list of speech models. One utterance moves through capture, wake detection, speech activity detection, transcription, intent or model reasoning, action approval, synthesis, playback, and interruption. Each stage adds delay, error, data exposure, and a possible failure that the user must understand.
 
 This guide follows that utterance and asks what to measure before calling a stack private, responsive, or useful. The included [`latency-budget.csv`](assets/latency-budget.csv) is the load-bearing artifact. It records observed p50/p95 timing, device, language, confidence, data egress, fallback, and confirmation for every stage; no result is prefilled.
@@ -139,6 +144,14 @@ The ten precise records in [`sources/sources.json`](sources/sources.json) suppor
 
 Re-run when microphone, room, wake/VAD/STT/TTS model, runtime, quantization, language, intent set, LLM, service topology, tool permissions, or retention changes. Preserve cold/warm and failed results with their exact tuple.
 
+## Adjacent guides
+
+- [local-code-model-memory-planner](https://github.com/Ricardgu/local-code-model-memory-planner) — Use it when local reasoning or transcription models must fit a workstation or service memory budget.
+- [open-source-agent-workflow-selector](https://github.com/Rubio199321/open-source-agent-workflow-selector) — Use it when approved voice actions must enter a durable or human-reviewed orchestration layer.
+- [privacy-dns-stack-comparison](https://github.com/stormjilua/privacy-dns-stack-comparison) — Use it when the local assistant’s network path also needs explicit DNS privacy and routing layers.
+
 ## License
 
 Original guide and latency worksheet: CC BY 4.0. Linked projects and documentation retain their terms.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
